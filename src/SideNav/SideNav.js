@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Category from "./Category";
-
+import profilePic from "../Assets/Md Razwan Niam-compressed.jpg";
 const SideNav = () => {
   const [fetchedData, setFetchedData] = useState([]);
 
@@ -28,23 +28,23 @@ const SideNav = () => {
         </div>
 
         <div class='sticky inset-x-0 bottom-0 border-t border-gray-100'>
-          <a
-            href='#'
+          <Link
+            to='/'
             class='flex items-center p-4 bg-white shrink-0 hover:bg-gray-50'>
             <img
               alt='Man'
-              src='https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+              src={profilePic}
               class='object-cover w-10 h-10 rounded-full'
             />
 
             <div class='ml-1.5'>
               <p class='text-xs'>
-                <strong class='block font-medium'>Eric Frusciante</strong>
+                <strong class='block font-medium'>Md Razwan Niam</strong>
 
-                <span> eric@frusciante.com </span>
+                <span> razwanniam1@gmail.com</span>
               </p>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
