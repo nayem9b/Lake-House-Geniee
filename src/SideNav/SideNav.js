@@ -16,7 +16,7 @@ const SideNav = () => {
   const fetchedDataArray = fetchedData.data;
   return (
     <div>
-      <div class='flex flex-col justify-between h-screen bg-white border-r w-1/4'>
+      <div class='flex flex-col justify-between  bg-white border-r w-1/4'>
         <div class='px-4 py-6'>
           <Link>
             <div className='flex'>
