@@ -18,7 +18,16 @@ const SideNav = () => {
     <div>
       <div class='flex flex-col justify-between h-screen bg-white border-r w-1/4'>
         <div class='px-4 py-6'>
-          <span class='block w-32 h-10 bg-gray-200 rounded-lg'></span>
+          <Link>
+            <div className='flex'>
+              <img
+                src='https://static.vecteezy.com/system/resources/previews/005/012/265/non_2x/cute-blue-genie-free-vector.jpg'
+                alt=''
+                className='w-12'
+              />
+              <h1 className='ml-8 text-2xl font-semibold '>Lake House Genie</h1>
+            </div>
+          </Link>
 
           <nav aria-label='Main Nav' class='flex flex-col mt-6 space-y-1'>
             {fetchedData.map((category) => (
